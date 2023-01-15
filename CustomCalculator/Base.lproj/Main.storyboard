@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jAm-uZ-Hod">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="4oh-87-zGI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="riM-3c-Tm3">
+                                <rect key="frame" x="157.5" y="35" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Zj2-TH-bDF"/>
+                                    <constraint firstAttribute="height" constant="60" id="c7F-ce-Yla"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tNp-tu-tde" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="36" y="130" width="303" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EPA-aW-rVj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIQ-7E-Hf5" customClass="CurrencyTxtField" customModule="window_shopper" customModuleProvider="target">
+                                <rect key="frame" x="36" y="195" width="303" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nkb-Sr-zwq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqQ-Fr-OYZ">
+                                <rect key="frame" x="36" y="280" width="303" height="62.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62.5" id="8ud-Yr-JNM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xnx-Sx-Ddg">
+                                <rect key="frame" x="134.5" y="347.5" width="106" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="08d-LR-QOW"/>
+                                    <constraint firstAttribute="height" constant="28" id="30F-Jd-EJd"/>
+                                    <constraint firstAttribute="width" constant="106" id="o9x-F4-k1p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCB-0R-gYl">
+                                <rect key="frame" x="129.5" y="617" width="116" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1r6-dg-gco"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="4sc-6s-H5N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cFh-2G-y0g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ggb-qc-VSR"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cIQ-7E-Hf5" firstAttribute="trailing" secondItem="tNp-tu-tde" secondAttribute="trailing" id="03j-tl-uTe"/>
+                            <constraint firstItem="cIQ-7E-Hf5" firstAttribute="centerX" secondItem="jAm-uZ-Hod" secondAttribute="centerX" id="4hj-KE-YkM"/>
+                            <constraint firstItem="ggb-qc-VSR" firstAttribute="trailing" secondItem="IqQ-Fr-OYZ" secondAttribute="trailing" constant="36" id="5H8-hC-J5x"/>
+                            <constraint firstItem="tNp-tu-tde" firstAttribute="top" secondItem="riM-3c-Tm3" secondAttribute="bottom" constant="35" id="7Dg-em-Fop"/>
+                            <constraint firstItem="riM-3c-Tm3" firstAttribute="top" secondItem="ggb-qc-VSR" secondAttribute="top" constant="35" id="7XS-GA-ZcR"/>
+                            <constraint firstItem="IqQ-Fr-OYZ" firstAttribute="leading" secondItem="ggb-qc-VSR" secondAttribute="leading" constant="36" id="AF9-g9-25J"/>
+                            <constraint firstItem="cIQ-7E-Hf5" firstAttribute="leading" secondItem="tNp-tu-tde" secondAttribute="leading" id="AYj-h6-bss"/>
+                            <constraint firstItem="Xnx-Sx-Ddg" firstAttribute="centerX" secondItem="jAm-uZ-Hod" secondAttribute="centerX" id="BvD-Aw-Oul"/>
+                            <constraint firstItem="riM-3c-Tm3" firstAttribute="centerX" secondItem="jAm-uZ-Hod" secondAttribute="centerX" id="En6-9y-4YH"/>
+                            <constraint firstItem="ggb-qc-VSR" firstAttribute="trailing" secondItem="tNp-tu-tde" secondAttribute="trailing" constant="36" id="HR7-mo-VyN"/>
+                            <constraint firstItem="IqQ-Fr-OYZ" firstAttribute="top" secondItem="cIQ-7E-Hf5" secondAttribute="bottom" constant="45" id="KLC-aO-qgO"/>
+                            <constraint firstItem="Xnx-Sx-Ddg" firstAttribute="top" secondItem="IqQ-Fr-OYZ" secondAttribute="bottom" constant="5" id="O0E-ce-OtJ"/>
+                            <constraint firstItem="4oh-87-zGI" firstAttribute="leading" secondItem="ggb-qc-VSR" secondAttribute="leading" id="P0I-Uv-4Zw"/>
+                            <constraint firstItem="OCB-0R-gYl" firstAttribute="centerX" secondItem="jAm-uZ-Hod" secondAttribute="centerX" id="Pmq-o1-XhQ"/>
+                            <constraint firstItem="tNp-tu-tde" firstAttribute="leading" secondItem="ggb-qc-VSR" secondAttribute="leading" constant="36" id="QrU-MR-xmo"/>
+                            <constraint firstItem="4oh-87-zGI" firstAttribute="trailing" secondItem="ggb-qc-VSR" secondAttribute="trailing" id="XqT-7N-1dC"/>
+                            <constraint firstItem="ggb-qc-VSR" firstAttribute="bottom" secondItem="OCB-0R-gYl" secondAttribute="bottom" constant="20" id="cj3-Uc-jie"/>
+                            <constraint firstItem="cIQ-7E-Hf5" firstAttribute="top" secondItem="tNp-tu-tde" secondAttribute="bottom" constant="25" id="gDk-87-PEz"/>
+                            <constraint firstItem="4oh-87-zGI" firstAttribute="top" secondItem="jAm-uZ-Hod" secondAttribute="top" id="gXT-YD-cww"/>
+                            <constraint firstItem="4oh-87-zGI" firstAttribute="bottom" secondItem="jAm-uZ-Hod" secondAttribute="bottom" id="rOC-NN-x6W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hoursLbl" destination="Xnx-Sx-Ddg" id="qXR-Sh-fDk"/>
+                        <outlet property="priceTxt" destination="cIQ-7E-Hf5" id="Vbc-Ru-KeQ"/>
+                        <outlet property="resultLbl" destination="IqQ-Fr-OYZ" id="36p-T3-XPf"/>
+                        <outlet property="wageTxt" destination="tNp-tu-tde" id="dok-nT-mkl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26.399999999999999" y="-27.436281859070466"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="cIQ-7E-Hf5">
+            <size key="intrinsicContentSize" width="65" height="18.5"/>
+        </designable>
+        <designable name="tNp-tu-tde">
+            <size key="intrinsicContentSize" width="111.5" height="18.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="windowShopperBG" width="414" height="736"/>
+        <image name="windowShopperIcon" width="115" height="115"/>
+    </resources>
+</document>
